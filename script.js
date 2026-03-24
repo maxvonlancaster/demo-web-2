@@ -133,3 +133,10 @@ categorySelect.addEventListener("change", loadBooks);
 sortSelect.addEventListener("change", loadBooks);
 loginButton.addEventListener("click", login);
 addItemButton.addEventListener("click", addItem);
+
+
+
+
+// other urls:
+// register: https://backend-for-students-production.up.railway.app/api/register
+// get by id: https://backend-for-students-production.up.railway.app/api/items/:id
