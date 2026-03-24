@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+select, input {
+    padding: 10px;
+    margin-left: 5px;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 10px;
+}
+
+.card{
+    background: rgb(197, 255, 255);
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px rgb(235, 234, 234);
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}

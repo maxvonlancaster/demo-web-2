@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Книжковий Магазин</title>
+</head>
+
+<body>
+    <h1>Книжковий Магазин</h1>
+
+    <div class="controls">
+        <input type="text" id="search-input">
+
+        <select id="category-select">
+            <option value="all">Всі</option>
+            <option value="tragedy">Трагедія</option>
+            <option value="distopia">Антиутопія</option>
+            <option value="fantasy">Фентезі</option>
+        </select>
+
+        <select id="sorting-select">
+            <option value="default">По замовчуванню</option>
+            <option value="asc">По зростанню ціни</option>
+            <option value="desc">По спаданню ціни</option>
+            <option value="name">По назві</option>
+        </select>
+    </div>
+
+    <div id="cards">
+
+    </div>
+
+    <div>
+        <input type="text" name="" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login">Login</button>
+    </div>
+
+
+    <div>
+        <input type="text" name="" id="new-name" placeholder="new item name">
+        <input type="text" id="new-description" placeholder="new item description">
+        <input type="number" id="new-price" placeholder="new item price">
+        <button id="add-item">Add Item</button>
+    </div>
+
+</body>
+<script async src="script.js"></script>
+</html>
