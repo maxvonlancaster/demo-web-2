@@ -21,7 +21,7 @@ async function fetchBooks(){
     try{
         let response = await fetch("https://backend-for-students-production.up.railway.app/api/items")
         .then(res => res.json()).then(data => {
-            books = data;
+            books = data.filter(i => i.category == "book-shop");
             loadBooks();
         })
         .catch(err => console.log(err));
@@ -116,7 +116,7 @@ async function addItem() {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${token}`
             },
-            body: JSON.stringify({ name, description, price })
+            body: JSON.stringify({ name, description, price, category: "book-shop" })
         }).then(res => res.json()).then(data => {
             console.log("Item added successfully:", data);
             fetchBooks(); // Refresh the book list after adding a new item
